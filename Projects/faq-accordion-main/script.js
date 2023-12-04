@@ -1,10 +1,10 @@
 "use strict";
 
-let buttons = document.querySelectorAll(".btn");
-let descriptions = document.querySelectorAll(`.description`);
-let imgs = document.querySelectorAll(".more");
-let img1 = "/assets/images/icon-plus.svg";
-let img2 = "/assets/images/icon-minus.svg";
+const buttons = document.querySelectorAll(".btn");
+const descriptions = document.querySelectorAll(`.description`);
+const imgs = document.querySelectorAll(".more");
+const imgPlus = "/assets/images/icon-plus.svg";
+const imgMinus = "/assets/images/icon-minus.svg";
 console.log(buttons);
 console.log(descriptions);
 console.log(imgs);
