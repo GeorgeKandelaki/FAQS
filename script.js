@@ -3,7 +3,7 @@
 const buttons = document.querySelectorAll(".btn");
 const descriptions = document.querySelectorAll(".description");
 const imgs = document.querySelectorAll(".more");
-const imgPlus = "images/icon-plus.svg";
+const imgPlus = "icon-plus.svg";
 const imgMinus = "icon-minus.svg";
 
 for (let i = 0; i < buttons.length; i++) {
