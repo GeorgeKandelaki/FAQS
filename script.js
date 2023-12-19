@@ -1,38 +1,23 @@
 "use strict";
 
 const buttons = document.querySelectorAll(".btn");
-const descriptions = document.querySelectorAll(`.description`);
+const descriptions = document.querySelectorAll(".description");
 const imgs = document.querySelectorAll(".more");
-const img1 = "icon-plus.svg";
-const img2 = "icon-minus.svg";
-console.log(buttons);
-console.log(descriptions);
-console.log(imgs);
+const imgPlus = "/assets/images/icon-plus.svg";
+const imgMinus = "/assets/images/icon-minus.svg";
 
 for (let i = 0; i < buttons.length; i++) {
-    function MoreLess() {
+    function toggleDescription() {
         descriptions[i].classList.toggle("hidden");
+        
         const currentSrc = imgs[i].getAttribute("src");
-        // imgs[i].src = img1; part of idk thing
-        console.log(currentSrc);
 
-        if (currentSrc === img1) {
-            imgs[i].setAttribute("src", img2);
+        if (currentSrc === imgPlus) {
+            imgs[i].setAttribute("src", imgMinus);
         } else {
-            imgs[i].setAttribute("src", img1);
+            imgs[i].setAttribute("src", imgPlus);
         }
-
-        // I Dont know how to make that work
-        // if (imgs[i].src === img1) {
-        //     imgs[i].src = img2;
-        // } else if (imgs[i].src === img2) {
-        //     imgs[i].src = img1;
-        // }
-
-        // imgs[i].src = imgs.src === img1 ? img2 : img1;
-        // function chImg() {
-        // }
-        // buttons[i].addEventListener("click", chImg);
     }
-    buttons[i].addEventListener("click", MoreLess);
+
+    buttons[i].addEventListener("click", toggleDescription);
 }
