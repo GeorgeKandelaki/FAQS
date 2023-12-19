@@ -3,8 +3,8 @@
 const buttons = document.querySelectorAll(".btn");
 const descriptions = document.querySelectorAll(`.description`);
 const imgs = document.querySelectorAll(".more");
-const imgPlus = "icon-plus.svg";
-const imgMinus = "icon-minus.svg";
+const img1 = "icon-plus.svg";
+const img2 = "icon-minus.svg";
 console.log(buttons);
 console.log(descriptions);
 console.log(imgs);
